@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavan Ler | Project Manager Portfolio</title>
+    <style>
+        /* CSS: 网页的装修风格 */
+        :root {
+            --primary-color: #2c3e50; 
+            --accent-color: #3498db;  
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+/* 6. 照片样式：你可以把照片命名为 profile.jpg 放在同一文件夹下 */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.2);
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+
+	header h1 { 
+            margin: 0; 
+            font-size: 2.8rem; 
+            letter-spacing: 1px;
+        }
+
+        /* 2. 调大 Job Header 字体 */
+        header p { 
+            margin: 10px 0 0; 
+            font-size: 1.4rem; 
+            font-weight: 300;
+            opacity: 0.9; 
+        }
+
+        .container {
+            max-width: 850px;
+            margin: -30px auto 40px;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        section { padding: 20px 0; border-bottom: 1px solid #eee; }
+        section:last-child { border-bottom: none; }
+
+       h2 { 
+            color: var(--primary-color); 
+            border-left: 5px solid var(--accent-color); 
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+	}
+
+	.skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+	.skills-tag {
+            background: #f0f4f8;
+            color: #2c3e50;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #dbe3ec;
+        }
+
+        .exp-item { margin-bottom: 25px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .company { font-size: 1.1rem; color: var(--accent-color); font-weight: bold; }
+        
+        /* 7. 联系方式展示 */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .contact-info a:hover { color: var(--accent-color); }
+
+        footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #888; }
+
+        @media (max-width: 600px) {
+            .container { margin: 0; padding: 20px; width: 100%; box-sizing: border-box; }
+            header h1 { font-size: 2rem; }
+            .exp-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cavan Ler Jun You</h1>
+        <p>Executive Project Manager | PMP® Candidate </p>
+    </header>
+
+    <div class="container">
+
+	<section id="about">
+            <h2>Professional Summary</h2>
+            <p>
+                Dynamic Project Manager with a <strong>Master of Architecture</strong> and extensive experience in coordinating multi-disciplinary teams within the consultancy sector. 
+                Currently pivoting toward <strong>IT Project Management</strong>, leveraging a strong foundation in project lifecycle management, stakeholder engagement, and risk mitigation. 
+                Committed to adopting <strong>Agile/Scrum</strong> methodologies to drive digital transformation and complex system deliveries.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skills-tag">Project Lifecycle Management</div>
+                <div class="skills-tag">Agile & Scrum</div>
+                <div class="skills-tag">Stakeholder Management</div>
+                <div class="skills-tag">Risk Assessment</div>
+                <div class="skills-tag">Cross-functional Coordination</div>
+                <div class="skills-tag">Budgeting & Scheduling</div>
+                <div class="skills-tag">Problem Solving</div>
+                <div class="skills-tag">Jira / Trello</div>
+            </div>
+        </section>
+
+	 <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="company">JGP Architect (S) Pte Ltd</span>
+                    <span>Jun 2024 - Present</span>
+                </div>
+                <strong>Executive Project Manager</strong>
+                <ul>
+                    <li>Leading cross-functional project teams to deliver complex consultancy projects from inception to completion.</li>
+                    <li>Managing high-level stakeholders and vendors, ensuring 100% alignment on project scope and technical requirements.</li>
+                    <li>Overseeing project timelines and resources, utilizing digital tools to track milestones and mitigate potential risks.</li>
+                    <li>Streamlining internal workflows by implementing collaborative project management practices.</li>
+                </ul>
+            </div>
+        </section>
+
+	<section id="education">
+            <h2>Education & Certifications</h2>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <strong>Master of Architecture</strong>
+                    <span>2020 - 2022</span>
+                </div>
+                <div>University of Malaya (UM)</div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <strong>Project Management Professional (PMP)®</strong>
+                    <span>Target: March 2026</span>
+                </div>
+                <div>Project Management Institute (PMI) - <em>In Progress</em></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <a href="mailto:cavan.ler222@gmail.com">📧 cavan.ler222@gmail.com</a>
+                <a href="https://www.linkedin.com/in/cavan-ler/" target="_blank">🔗 linkedin.com/in/cavan-ler</a>
+                <a href="https://github.com/cavan-ler" target="_blank">💻 github.com/cavan-ler</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Cavan Ler. Built with Helvetica & Passion.</p>
+    </footer>
+
+</body>
+</html>
